@@ -1,0 +1,117 @@
+body {
+    background-color: #e7f0fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #003366;
+}
+
+.navbar-brand, .nav-link, .footer {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: #cce7ff;
+}
+
+/* Styling for the map container */
+.map-container {
+    width: 100%; /* Make the map container full width */
+    max-width: 1000px; /* Limit the max width of the map */
+    height: 500px; /* Set a fixed height for the map */
+    margin: 0 auto; /* Center the map horizontally */
+    border: 5px solid #006bd7; /* Add a subtle border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for some depth */
+}
+
+/* Responsive map iframe */
+.map-container iframe {
+    width: 100%; /* Make the iframe width responsive */
+    height: 100%; /* Make the iframe height responsive */
+    border: 0; /* Remove any default iframe border */
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.footer {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.search-bar {
+    background-color: white;
+    border: 1px solid #cce7ff;
+    color: #003366;
+}
+
+.search-bar:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: #003366;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+}
+
+.bi-search {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(204, 231, 255, 0.3);
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.objective-section {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.objective-section h5 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.objective-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+.objective-section .highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        height: 300px;
+    }
+}
